@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tisha Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+ <!--font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gray-100">
+<div class="flex gap-9">
+<!-- Navbar -->
+<div class="max-w-2xl mx-auto flex justify-between p-5 m-5 pt-28 gap-5">
+<div class="relative -top-20 text-center  bg-white shadow rounded-3xl w-auto mx-5 p-8"> 
+     <img src="./my photo.png" alt="" class="w-4/6 mx-auto bg-pink-300  rounded-2xl relative top-25 -translate-y-1/2 object-cover "> 
+<h1 class="text-4xl font-bold text-pink-500">Hi,I'm Tisha</h1>
+<p class="text-gray-700">Web Developer  & AI Enthusiast</p>
+<br>
+<div class=" flex items-center gap-3 bg-gray-100 shadow p-3 rounded-xl ">
+    <button class="btn bg-white flex items-center gap-2  p-3"><i class="fa-solid fa-phone text-pink-500"></i></button><h1 class="font-bold">Phone:</h1>
+    <p>+880 01685058659</p>
+    </div>
+    <div class="flex items-center gap-3 bg-gray-100 shadow p-3 rounded-xl">
+    <button class="btn bg-white flex items-center gap-2  p-3"><i class="fa-regular fa-envelope text-pink-500"></i></button><h1 class="font-bold">Email:</h1>
+    <h1>nafisatisha230@gmail.com</h1>
+    </div>
+    <div class="flex items-center  gap-3 bg-gray-100 shadow p-3 rounded-xl">
+    <button class="btn bg-white flex items-center gap-2  p-3"><i class="fa-solid fa-location-dot  text-pink-500"></i></button><h1 class="font-bold">Locatin:</h1>
+    <p>Chottogram,Bangladesh</p>
+    </div>
+    <div class="flex items-center gap-3 bg-gray-100 shadow p-3 rounded-xl">
+    <button class="btn bg-white flex items-center gap-2  p-3"><i class="fa-solid fa-cake-candles text-pink-500"></i></button><p class="font-bold">Birthday:</p>
+    <p>24 April,2002</p>
+    </div>
+</div>
+</div>
+<div class="space-x-4 bg-gray-200 rounded-xl w-1/2 h-170 mx-auto">
+ <div  class="flex gap-5 bg-white m-10 p-5 w-auto rounded-xl">
+            <div onclick="showSection('about')" class="flex flex-col items-center bg-linear-to-bl from-pink-500 to-fuchsia-500 text-white rounded-xl w-auto p-2">
+<i class="fa-regular fa-user "></i>
+<h1 >About</h1>
+            </div>
+            <button onclick="showSection('resume')" class="flex flex-col items-center bg-linear-to-bl from-pink-500 to-fuchsia-500 text-white rounded-xl w-auto p-2">
+<i class="fa-regular fa-file"></i>
+<h1 >Resume</h1>
+            </button>
+            <button onclick="showSection('projects')" class="flex flex-col items-center bg-linear-to-bl from-pink-500 to-fuchsia-500 text-white rounded-xl w-auto p-2">
+<i class="fa-solid fa-briefcase"></i>
+<h1 >Works</h1>
+            </button>
+            <button class="flex flex-col items-center bg-linear-to-bl from-pink-500 to-fuchsia-500 text-white rounded-xl w-auto p-2">
+<i class="fa-brands fa-blogger-b"></i>
+<h1 >Blogs</h1>
+            </button>
+            <button onclick="showSection('contact')" class="flex flex-col items-center bg-linear-to-bl from-pink-500 to-fuchsia-500 text-white rounded-xl w-auto p-2">
+<i class="fa-solid fa-address-book"></i>
+<h1 >Contact</h1>
+            </button>
+        </div>
+
+
+<!-- About -->
+
+<section id="about" class="section max-w-5xl mx-auto p-8">
+
+<h2 class="text-3xl font-bold mb-4">About Me <span class="text-pink-500">-------------</span></h2>
+
+<p class="text-gray-600">
+I specialize in web development with hands-on experience in HTML, CSS, Tailwind, and JavaScript. I’m eager to contribute to innovative projects that combine web technologies and AI to create meaningful digital experiences.
+</p>
+<div class="grid grid-cols-3 gap-5">
+    <div class="bg-pink-100 rounded-xl p-2 mt-5 w-auto h-70">
+        <div class="flex items-center gap-1">
+<i class="fa-solid fa-file-code text-pink-400"></i>
+<p class="font-bold">Web Development</p>
+</div>
+<div class="pl-5">As a Web Developer, I strive to build efficient and scalable websites that are visually appealing and highly functional. I use modern tools like Tailwind, JavaScript, and React to deliver digital solutions that meet user needs.</div>
+    </div>
+    <div class="bg-pink-100 rounded-xl p-2 mt-5 w-auto h-70">
+        <div class="flex items-center gap-1">
+<i class="fa-brands fa-wpforms text-pink-400"></i>
+<p class="font-bold">App Development</p>
+</div>
+<div class="pl-5">I design and develop modern, responsive, and user-friendly mobile applications. Skilled in Flutter, React Native, and JavaScript, I focus on creating apps that provide seamless user experiences and efficient performance. </div>
+    </div>
+    <div class="bg-pink-100 rounded-xl p-2 mt-5 w-auto h-70">
+        <div class="flex items-center gap-1">
+<i class="fa-brands fa-airbnb text-pink-400"></i>
+<p class="font-bold">AI</p>
+</div>
+<div class="pl-5">I explore and develop solutions using Artificial Intelligence and Machine Learning. Skilled in Python, TensorFlow, and AI algorithms, I focus on creating models that solve real-world problems and enhance user experiences.</div>
+    </div>
+    
+    </div>
+</div>
+</section>
+
+<!-- Resume -->
+
+<section id="resume" class="section hidden max-w-5xl mx-auto p-8">
+
+<h2 class="text-3xl font-bold mb-4">Resume</h2>
+
+<div class="bg-white p-6 rounded shadow">
+
+<p>Frontend Developer</p>
+<p>Skills: HTML, CSS, Tailwind, JavaScript</p>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects" class="section hidden max-w-5xl mx-auto p-8">
+
+<h2 class="text-3xl font-bold mb-6">My Projects</h2>
+
+<div id="repoContainer" class="grid md:grid-cols-3 gap-6"></div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="section hidden max-w-5xl mx-auto p-8">
+
+<h2 class="text-3xl font-bold mb-4">Contact</h2>
+
+<form class="bg-white p-6 rounded shadow space-y-4">
+
+<input class="w-full border p-2 rounded" placeholder="Name">
+
+<input class="w-full border p-2 rounded" placeholder="Email">
+
+<textarea class="w-full border p-2 rounded" placeholder="Message"></textarea>
+
+<button class="bg-pink-500 text-white px-4 py-2 rounded">
+Send
+</button>
+
+</form>
+
+</section>
+</div>
+</div>
+<script src="./script.js/index.js"></script>
+
+</body>
+</html>
