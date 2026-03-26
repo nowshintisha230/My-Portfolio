@@ -4,274 +4,927 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tisha Portfolio</title>
+<title>Tisha's Portfolio</title>
 
-<!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
-<!-- DaisyUI -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style type="text/tailwindcss">
+@variant dark (&:where(.dark, .dark *));
+</style>
 
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<style>
+.dot{
+width:12px;
+height:12px;
+border-radius:50%;
+display:inline-block;
+background:#9ca3af;
+transition:all 0.3s ease;
+}
+.active{
+box-shadow:0 0 8px currentColor;
+transform:scale(1.2);
+}
+
+html{
+scroll-behavior:smooth;
+}
+</style>
 </head>
 
-<body class="bg-base-100 text-base-content">
+<body class="bg-white text-black dark:bg-black dark:text-white transition duration-500">
 
-<!-- ================= NAVBAR ================= -->
+<!-- HEADER -->
+<header id="home">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<nav class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+<title>Tisha's Portfolio</title>
 
-<h1 class="text-xl font-bold text-pink-500">
-Tisha <i class="fa-solid fa-code"></i>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+<style type="text/tailwindcss">
+@variant dark (&:where(.dark, .dark *));
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<style>
+.dot{
+width:12px;
+height:12px;
+border-radius:50%;
+display:inline-block;
+background:#9ca3af;
+transition:all 0.3s ease;
+}
+.active{
+box-shadow:0 0 8px currentColor;
+transform:scale(1.2);
+}
+
+html{
+scroll-behavior:smooth;
+}
+</style>
+</head>
+
+<body class="bg-white text-black dark:bg-black dark:text-white transition duration-500">
+
+<!-- HEADER -->
+<header id="home">
+<nav class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-5 md:px-12 py-6 gap-4">
+
+<div class="text-pink-400 text-2xl font-semibold">
+<h1>Nafisha <i class="fa-solid fa-code"></i></h1>
+</div>
+
+<div class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm md:text-base">
+<a href="#home" class="hover:text-pink-400"><i class="fa-regular fa-house"></i> Home</a>
+<a href="#about" class="hover:text-pink-400"><i class="fa-solid fa-circle-info"></i> About</a>
+<a href="#skills" class="hover:text-pink-400"><i class="fa-solid fa-computer"></i> Skills</a>
+<a href="#projects" class="hover:text-pink-400"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+<a href="#contact" class="hover:text-pink-400"><i class="fa-solid fa-envelope"></i> Contact</a>
+</div>
+
+<button id="themeToggle" class="border border-pink-400 px-2 py-1 rounded hover:bg-pink-400 hover:text-black transition">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</nav>
+</header>
+
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-12 px-6 md:px-16 py-12">
+
+<div class="space-y-4 text-center lg:text-left max-w-xl">
+
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+Hi, I'm Nafisha
 </h1>
 
-<div class="flex gap-3 text-sm items-center">
+<h2 class="text-pink-400 text-xl md:text-2xl font-semibold">
+Junior Web Developer & AI Enthusiast
+</h2>
 
-<a href="#home" class="hover:text-pink-500">Home</a>
-<a href="#about" class="hover:text-pink-500">About</a>
-<a href="#skills" class="hover:text-pink-500">Skills</a>
-<a href="#projects" class="hover:text-pink-500">Projects</a>
-<a href="#contact" class="hover:text-pink-500">Contact</a>
+<p class="text-gray-700 dark:text-gray-300">
+Building Responsive Websites & Exploring the Power of AI.
+</p>
 
-<button id="themeToggle" class="btn btn-sm btn-outline">
-<i class="fa-solid fa-moon"></i>
+<div class="flex flex-wrap gap-5 justify-center lg:justify-start items-center">
+
+<a href="Nafisa_Tisha_CV.pdf" download
+class="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl px-6 py-2 text-white border-purple-500">
+Download Resume <i class="fa-solid fa-download"></i>
+</a>
+
+<div class="flex gap-4 text-2xl text-gray-800 dark:text-white">
+
+<a href="https://github.com/nowshintisha230" target="_blank" class="hover:text-pink-400">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/nafishanowshintisha" target="_blank" class="hover:text-pink-400">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="mailto:nafisatisha230@gmail.com" class="hover:text-pink-400">
+<i class="fa-solid fa-at"></i>
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class="flex justify-center">
+<img src="./WhatsApp Image 2026-03-07 at 4.03.11 AM.png"
+class="rounded-full w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 shadow-[0_0_20px_rgba(6,72,153,0.7),0_0_40px_rgba(139,92,246,0.7)]"/>
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="max-w-7xl mx-auto px-6 md:px-16 py-14">
+
+<h1 class="text-3xl md:text-5xl text-center font-semibold mb-10">About Me</h1>
+
+<h2 class="text-pink-400 text-2xl md:text-4xl font-bold text-center">
+I'm Nafisha Nowshin Tisha
+</h2>
+
+<p class="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-4 mb-10">
+I am a dedicated Computer Science & Engineering student with a passion for Web Development and Artificial Intelligence. I love creating modern, responsive websites and exploring how intelligent technologies can improve digital experiences.
+</p>
+
+<div class="flex flex-wrap gap-4 justify-center">
+
+<button class="btn bg-black border border-pink-500 rounded-xl px-6 py-2">
+<span class="text-pink-400">
+<i class="fa-solid fa-computer"></i> Web Application Development
+</span>
+</button>
+
+<button class="btn bg-black border border-pink-500 rounded-xl px-6 py-2">
+<span class="text-pink-400">
+<i class="fa-solid fa-mobile-screen-button"></i> Mobile Application Development
+</span>
+</button>
+
+<button class="btn bg-black border border-pink-500 rounded-xl px-6 py-2">
+<span class="text-pink-400">
+<i class="fa-solid fa-robot"></i> AI
+</span>
 </button>
 
 </div>
 
-</nav>
-
-<!-- ================= HERO ================= -->
-
-<section id="home" class="text-center py-16 px-5">
-
-<h1 class="text-4xl md:text-5xl font-bold">
-Hello I'm <span class="text-pink-500">Nafisa Nowshin Tisha</span>
-</h1>
-
-<p class="mt-4 text-lg max-w-xl mx-auto">
-CSE Student | Future Embedded Hardware Engineer | Web Developer
-</p>
-
-<div class="mt-6 flex justify-center gap-4">
-<a class="btn btn-primary">Download CV</a>
-<a href="#contact" class="btn btn-outline">Contact Me</a>
-</div>
-
 </section>
 
-<!-- ================= ABOUT ================= -->
 
-<section id="about" class="max-w-5xl mx-auto py-16 px-5">
+<!-- SKILLS -->
+<section id="skills" class="max-w-5xl mx-auto px-6 md:px-10 py-14">
 
-<h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+<h1 class="text-3xl md:text-5xl text-center font-semibold mb-12">My Skills</h1>
 
-<p class="text-center text-lg leading-relaxed">
-I am a Computer Science and Engineering student passionate about 
-technology, web development, and embedded systems. My goal is to 
-pursue a Master's degree abroad with a full scholarship and become 
-a professional Embedded Hardware Engineer.
-</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-</section>
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills" class="max-w-6xl mx-auto py-16 px-5">
-
-<h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
-
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-<div class="card bg-base-200 p-6 text-center">
-<i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
-<h3 class="mt-2 font-semibold">HTML</h3>
+<div class="flex items-center gap-6">
+<span class="text-orange-500 font-semibold w-24">HTML</span>
+<div class="flex gap-2" id="htmlSkill"></div>
 </div>
 
-<div class="card bg-base-200 p-6 text-center">
-<i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
-<h3 class="mt-2 font-semibold">CSS</h3>
+<div class="flex items-center gap-6">
+<span class="text-blue-400 font-semibold w-24">CSS</span>
+<div class="flex gap-2" id="cssSkill"></div>
 </div>
 
-<div class="card bg-base-200 p-6 text-center">
-<i class="fa-brands fa-js text-4xl text-yellow-500"></i>
-<h3 class="mt-2 font-semibold">JavaScript</h3>
+<div class="flex items-center gap-6">
+<span class="text-cyan-400 font-semibold w-24">Tailwind</span>
+<div class="flex gap-2" id="tailwindSkill"></div>
 </div>
 
-<div class="card bg-base-200 p-6 text-center">
-<i class="fa-brands fa-react text-4xl text-cyan-500"></i>
-<h3 class="mt-2 font-semibold">React</h3>
+<div class="flex items-center gap-6">
+<span class="text-yellow-400 font-semibold w-24">JavaScript</span>
+<div class="flex gap-2" id="jsSkill"></div>
 </div>
 
 </div>
 
 </section>
 
-<!-- ================= PROJECTS ================= -->
 
-<section id="projects" class="max-w-7xl mx-auto py-16 px-5">
+<!-- PROJECTS -->
+<section id="projects" class="max-w-7xl mx-auto px-6 md:px-16 py-14">
 
-<h2 class="text-3xl font-bold text-center mb-10">My Projects</h2>
+<h1 class="text-3xl md:text-5xl text-center font-semibold mb-12">My Projects</h1>
 
-<div class="grid md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<!-- Project 1 -->
+<!-- PROJECT 1 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+<h3 class="text-2xl font-bold text-gray-800">📊 Job Tracker</h3>
+<p class="text-gray-700">A fully functional job tracking website to manage Available Jobs, Interviewed Jobs, and Rejected Jobs efficiently with dynamic UI updates.</p>
 
-<div class="card bg-base-200 shadow">
+<div class="flex flex-wrap gap-2">
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">HTML</span>
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">Tailwind CSS</span>
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">DaisyUI</span>
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">JavaScript</span>
+</div>
 
-<img src="https://i.ibb.co/j4sQ5VY/portfolio.png" class="rounded-t">
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Responsive job dashboard</li>
+<li>Dynamic Interview & Rejected status update</li>
+<li>Delete job cards with automatic count updates</li>
+<li>Tab filtering: All / Interview / Rejected</li>
+</ul>
 
-<div class="p-5">
+<div class="flex gap-3 pt-2">
+<a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="#" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+</div>
 
-<h3 class="text-xl font-bold">Personal Portfolio</h3>
 
-<p class="mt-2 text-sm">
-A responsive developer portfolio built with HTML, Tailwind and DaisyUI.
+<!-- PROJECT 2 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+<h3 class="text-2xl font-bold text-gray-800">🚀 Tech Wave Landing Page</h3>
+
+<p class="text-gray-700">A modern responsive landing page built with HTML and Tailwind CSS featuring smooth hover effects and clean UI sections.</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">Tailwind CSS</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Responsive landing page</li>
+<li>Modern UI layout</li>
+<li>Hover effects</li>
+<li>Hero, Features, Testimonials sections</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/g-kiv4Uv" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/gg6UgeQq" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+</div>
+
+
+<!-- PROJECT 3 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+
+<h3 class="text-2xl font-bold text-gray-800">📝 GitHub Issues Tracker</h3>
+
+<p class="text-gray-700">
+A GitHub-style issue tracking web app that allows users to view, search, and manage issues with dynamic filtering and detailed modals.
 </p>
 
-<div class="mt-4 flex gap-3">
-<button class="btn btn-sm btn-primary">Live</button>
-<button class="btn btn-sm btn-outline">Code</button>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">Tailwind CSS</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">DaisyUI</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">JavaScript</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Login page with demo admin credentials</li>
+<li>Issue filtering tabs</li>
+<li>Search functionality</li>
+<li>Modal details</li>
+<li>API loading spinner</li>
+<li>Fully responsive UI</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/g_f-uiRC" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/g2gAxK4s" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
 </div>
 
 </div>
 
-</div>
 
-<!-- Project 2 -->
+<!-- PROJECT 4 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
 
-<div class="card bg-base-200 shadow">
+<h3 class="text-2xl font-bold text-gray-800">🏗️ G3 Architects Landing Page</h3>
 
-<img src="https://i.ibb.co/jkN6F3G/cricket.png" class="rounded-t">
-
-<div class="p-5">
-
-<h3 class="text-xl font-bold">Cricket Player App</h3>
-
-<p class="mt-2 text-sm">
-React project where users can select cricket players based on price and rating.
+<p class="text-gray-700">
+A modern architect-themed landing page with clean layout, smooth hover effects, and well-structured sections.
 </p>
 
-<div class="mt-4 flex gap-3">
-<button class="btn btn-sm btn-primary">Live</button>
-<button class="btn btn-sm btn-outline">Code</button>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML5</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">CSS3</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Modern landing page design</li>
+<li>Clean layout</li>
+<li>Interactive hover effects</li>
+<li>Hero, Features, Facts sections</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/gdJ4zsNc" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/g7DPUjar" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
 </div>
 
 </div>
 
-</div>
 
-<!-- Project 3 -->
+<!-- PROJECT 5 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
 
-<div class="card bg-base-200 shadow">
+<h3 class="text-2xl font-bold text-gray-800">🇬🇧 English Janala</h3>
 
-<img src="https://i.ibb.co/x7Yq6zL/task.png" class="rounded-t">
-
-<div class="p-5">
-
-<h3 class="text-xl font-bold">Task Manager</h3>
-
-<p class="mt-2 text-sm">
-A simple productivity task manager built with JavaScript.
+<p class="text-gray-700">
+A lesson-based English learning website that helps users learn new words with Bangla meanings and pronunciation using an interactive UI and API data.
 </p>
 
-<div class="mt-4 flex gap-3">
-<button class="btn btn-sm btn-primary">Live</button>
-<button class="btn btn-sm btn-outline">Code</button>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">Tailwind CSS</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">JavaScript</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">API</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Lesson-based English learning</li>
+<li>Bangla meaning</li>
+<li>Pronunciation support</li>
+<li>Word details modal</li>
+<li>Responsive UI</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/g4AgxvTt" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/gmUEuTrB" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+
+</div>
+
+
+<!-- PROJECT 6 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+
+<h3 class="text-2xl font-bold text-gray-800">🌍 React World On The Go</h3>
+
+<p class="text-gray-700">
+Explore 250 countries with flags and details, track visited countries, and see top visited countries in an interactive React-based UI.
+</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">React</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">JavaScript</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">CSS</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">API</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Displays 250 countries</li>
+<li>Mark visited countries</li>
+<li>Dynamic visited counter</li>
+<li>Top visited countries list</li>
+<li>Fully interactive UI</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/gEAD9DQV" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/gzUGq9r4" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
 </div>
 
 </div>
 
 </div>
-
-</div>
-
 </section>
 
-<!-- ================= CONTACT ================= -->
 
-<section id="contact" class="max-w-5xl mx-auto py-16 px-5 text-center">
+<!-- FOOTER -->
+<footer id="contact" class="max-w-7xl mx-auto rounded-2xl mt-16 mb-10 bg-gradient-to-r from-pink-400 to-purple-500 text-white py-12 px-6 md:px-10">
 
-<h2 class="text-3xl font-bold mb-8">Contact Me</h2>
-
-<p>Email: nafisanowshin@example.com</p>
-<p>Location: Cox's Bazar, Bangladesh</p>
-
-<div class="flex justify-center gap-6 mt-6 text-2xl">
-
-<a href="#"><i class="fa-brands fa-github"></i></a>
-<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-<a href="#"><i class="fa-brands fa-facebook"></i></a>
-
-</div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="bg-base-200 py-10">
-
-<div class="max-w-6xl mx-auto px-5 grid md:grid-cols-3 gap-6 text-center md:text-left">
+<div class="grid md:grid-cols-2 gap-10">
 
 <div>
-<h3 class="text-xl font-bold text-pink-500">Nafisa Nowshin Tisha</h3>
-<p class="mt-2 text-sm">
-CSE Student & Future Embedded Hardware Engineer.
+<h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+
+<p class="mb-2">
+I’m Nafisa Nowshin Tisha, a frontend & web developer.
+Reach out for projects or collaborations 🚀
+</p>
+
+<p class="mb-2">
+📧 Email:
+<a href="mailto:nafisatisha230@gmail.com" class="underline">
+nafisatisha230@gmail.com
+</a>
+</p>
+
+<p>
+📍 Location: Cox's Bazar, Bangladesh
 </p>
 </div>
 
 <div>
+<h3 class="text-2xl font-bold mb-4">Message Me</h3>
 
-<h4 class="font-semibold mb-2">Quick Links</h4>
+<form class="space-y-4">
 
-<p><a href="#home">Home</a></p>
-<p><a href="#about">About</a></p>
-<p><a href="#projects">Projects</a></p>
+<input type="text" placeholder="Your Name"
+class="w-full px-4 py-2 rounded text-gray-800"/>
 
-</div>
+<input type="email" placeholder="Your Email"
+class="w-full px-4 py-2 rounded text-gray-800"/>
 
-<div>
+<textarea rows="4" placeholder="Your Message"
+class="w-full px-4 py-2 rounded text-gray-800"></textarea>
 
-<h4 class="font-semibold mb-2">Connect</h4>
+<button class="bg-white text-purple-600 font-bold px-6 py-2 rounded">
+Send Message
+</button>
 
-<div class="flex justify-center md:justify-start gap-4 text-xl">
-
-<i class="fa-brands fa-github"></i>
-<i class="fa-brands fa-linkedin"></i>
-<i class="fa-brands fa-facebook"></i>
-
-</div>
-
+</form>
 </div>
 
 </div>
 
-<p class="text-center mt-8 text-sm">
-© 2026 Nafisa Nowshin Tisha. All Rights Reserved.
-</p>
+<div class="text-center pt-6 border-t border-white/20 mt-8">
+<p class="text-sm">© 2026 Nafisa Nowshin Tisha. All rights reserved.</p>
+</div>
 
 </footer>
 
-<!-- ================= THEME SCRIPT ================= -->
 
 <script>
+document.addEventListener("DOMContentLoaded",()=>{
 
-const toggle=document.getElementById("themeToggle")
+const skills={
+htmlSkill:{count:9,color:"#f97316"},
+cssSkill:{count:8,color:"#38bdf8"},
+tailwindSkill:{count:8,color:"#22d3ee"},
+jsSkill:{count:7,color:"#facc15"}
+}
 
-toggle.addEventListener("click",()=>{
+Object.entries(skills).forEach(([id,skill])=>{
+const container=document.getElementById(id)
 
-const html=document.documentElement
+for(let i=1;i<=10;i++){
+const dot=document.createElement("span")
+dot.className="dot"
 
-if(html.getAttribute("data-theme")==="light"){
-html.setAttribute("data-theme","dark")
-}else{
-html.setAttribute("data-theme","light")
+if(i<=skill.count){
+dot.style.background=skill.color
+dot.classList.add("active")
+}
+
+container.appendChild(dot)
 }
 
 })
 
+})
+
+
+const toggleBtn=document.getElementById("themeToggle")
+const html=document.documentElement
+
+toggleBtn.addEventListener("click",()=>{
+html.classList.toggle("dark")
+
+if(html.classList.contains("dark")){
+toggleBtn.innerHTML='<i class="fa-solid fa-sun"></i>'
+}else{
+toggleBtn.innerHTML='<i class="fa-solid fa-moon"></i>'
+}
+
+})
+</script>
+
+</body>
+</html>
+</header>
+
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-12 px-6 md:px-16 py-12">
+
+<div class="space-y-4 text-center lg:text-left max-w-xl">
+
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+Hi, I'm Nafisha
+</h1>
+
+<h2 class="text-pink-400 text-xl md:text-2xl font-semibold">
+Junior Web Developer & AI Enthusiast
+</h2>
+
+<p class="text-gray-700 dark:text-gray-300">
+Building Responsive Websites & Exploring the Power of AI.
+</p>
+
+<div class="flex flex-wrap gap-5 justify-center lg:justify-start items-center">
+
+<a href="Nafisa_Tisha_CV.pdf" download
+class="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl px-6 py-2 text-white border-purple-500">
+Download Resume <i class="fa-solid fa-download"></i>
+</a>
+
+<div class="flex gap-4 text-2xl text-gray-800 dark:text-white">
+
+<a href="https://github.com/nowshintisha230" target="_blank" class="hover:text-pink-400">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/nafishanowshintisha" target="_blank" class="hover:text-pink-400">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="mailto:nafisatisha230@gmail.com" class="hover:text-pink-400">
+<i class="fa-solid fa-at"></i>
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class="flex justify-center">
+<img src="./WhatsApp Image 2026-03-07 at 4.03.11 AM.png"
+class="rounded-full w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 shadow-[0_0_20px_rgba(6,72,153,0.7),0_0_40px_rgba(139,92,246,0.7)]"/>
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="max-w-7xl mx-auto px-6 md:px-16 py-14">
+
+<h1 class="text-3xl md:text-5xl text-center font-semibold mb-10">About Me</h1>
+
+<h2 class="text-pink-400 text-2xl md:text-4xl font-bold text-center">
+I'm Nafisha Nowshin Tisha
+</h2>
+
+<p class="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto mt-4 mb-10">
+I am a dedicated Computer Science & Engineering student with a passion for Web Development and Artificial Intelligence. I love creating modern, responsive websites and exploring how intelligent technologies can improve digital experiences.
+</p>
+
+<div class="flex flex-wrap gap-4 justify-center">
+
+<button class="btn bg-black border border-pink-500 rounded-xl px-6 py-2">
+<span class="text-pink-400">
+<i class="fa-solid fa-computer"></i> Web Application Development
+</span>
+</button>
+
+<button class="btn bg-black border border-pink-500 rounded-xl px-6 py-2">
+<span class="text-pink-400">
+<i class="fa-solid fa-mobile-screen-button"></i> Mobile Application Development
+</span>
+</button>
+
+<button class="btn bg-black border border-pink-500 rounded-xl px-6 py-2">
+<span class="text-pink-400">
+<i class="fa-solid fa-robot"></i> AI
+</span>
+</button>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="max-w-5xl mx-auto px-6 md:px-10 py-14">
+
+<h1 class="text-3xl md:text-5xl text-center font-semibold mb-12">My Skills</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+<div class="flex items-center gap-6">
+<span class="text-orange-500 font-semibold w-24">HTML</span>
+<div class="flex gap-2" id="htmlSkill"></div>
+</div>
+
+<div class="flex items-center gap-6">
+<span class="text-blue-400 font-semibold w-24">CSS</span>
+<div class="flex gap-2" id="cssSkill"></div>
+</div>
+
+<div class="flex items-center gap-6">
+<span class="text-cyan-400 font-semibold w-24">Tailwind</span>
+<div class="flex gap-2" id="tailwindSkill"></div>
+</div>
+
+<div class="flex items-center gap-6">
+<span class="text-yellow-400 font-semibold w-24">JavaScript</span>
+<div class="flex gap-2" id="jsSkill"></div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-7xl mx-auto px-6 md:px-16 py-14">
+
+<h1 class="text-3xl md:text-5xl text-center font-semibold mb-12">My Projects</h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- PROJECT 1 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+<h3 class="text-2xl font-bold text-gray-800">📊 Job Tracker</h3>
+<p class="text-gray-700">A fully functional job tracking website to manage Available Jobs, Interviewed Jobs, and Rejected Jobs efficiently with dynamic UI updates.</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">HTML</span>
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">Tailwind CSS</span>
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">DaisyUI</span>
+<span class="bg-white text-black px-3 py-1 rounded text-sm shadow">JavaScript</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Responsive job dashboard</li>
+<li>Dynamic Interview & Rejected status update</li>
+<li>Delete job cards with automatic count updates</li>
+<li>Tab filtering: All / Interview / Rejected</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="#" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+</div>
+
+
+<!-- PROJECT 2 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+<h3 class="text-2xl font-bold text-gray-800">🚀 Tech Wave Landing Page</h3>
+
+<p class="text-gray-700">A modern responsive landing page built with HTML and Tailwind CSS featuring smooth hover effects and clean UI sections.</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">Tailwind CSS</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Responsive landing page</li>
+<li>Modern UI layout</li>
+<li>Hover effects</li>
+<li>Hero, Features, Testimonials sections</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/g-kiv4Uv" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/gg6UgeQq" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+</div>
+
+
+<!-- PROJECT 3 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+
+<h3 class="text-2xl font-bold text-gray-800">📝 GitHub Issues Tracker</h3>
+
+<p class="text-gray-700">
+A GitHub-style issue tracking web app that allows users to view, search, and manage issues with dynamic filtering and detailed modals.
+</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">Tailwind CSS</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">DaisyUI</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">JavaScript</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Login page with demo admin credentials</li>
+<li>Issue filtering tabs</li>
+<li>Search functionality</li>
+<li>Modal details</li>
+<li>API loading spinner</li>
+<li>Fully responsive UI</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/g_f-uiRC" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/g2gAxK4s" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+
+</div>
+
+
+<!-- PROJECT 4 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+
+<h3 class="text-2xl font-bold text-gray-800">🏗️ G3 Architects Landing Page</h3>
+
+<p class="text-gray-700">
+A modern architect-themed landing page with clean layout, smooth hover effects, and well-structured sections.
+</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML5</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">CSS3</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Modern landing page design</li>
+<li>Clean layout</li>
+<li>Interactive hover effects</li>
+<li>Hero, Features, Facts sections</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/gdJ4zsNc" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/g7DPUjar" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+
+</div>
+
+
+<!-- PROJECT 5 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+
+<h3 class="text-2xl font-bold text-gray-800">🇬🇧 English Janala</h3>
+
+<p class="text-gray-700">
+A lesson-based English learning website that helps users learn new words with Bangla meanings and pronunciation using an interactive UI and API data.
+</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">Tailwind CSS</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">JavaScript</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">API</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Lesson-based English learning</li>
+<li>Bangla meaning</li>
+<li>Pronunciation support</li>
+<li>Word details modal</li>
+<li>Responsive UI</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/g4AgxvTt" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/gmUEuTrB" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+
+</div>
+
+
+<!-- PROJECT 6 -->
+<div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-xl shadow-lg p-6 hover:scale-105 transition space-y-4">
+
+<h3 class="text-2xl font-bold text-gray-800">🌍 React World On The Go</h3>
+
+<p class="text-gray-700">
+Explore 250 countries with flags and details, track visited countries, and see top visited countries in an interactive React-based UI.
+</p>
+
+<div class="flex flex-wrap gap-2">
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">React</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">JavaScript</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">HTML</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">CSS</span>
+<span class="bg-white px-3 py-1 rounded text-sm shadow text-black">API</span>
+</div>
+
+<ul class="text-gray-700 text-sm list-disc pl-5">
+<li>Displays 250 countries</li>
+<li>Mark visited countries</li>
+<li>Dynamic visited counter</li>
+<li>Top visited countries list</li>
+<li>Fully interactive UI</li>
+</ul>
+
+<div class="flex gap-3 pt-2">
+<a href="https://lnkd.in/gEAD9DQV" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Live Demo</a>
+<a href="https://lnkd.in/gzUGq9r4" class="bg-gray-900 hover:bg-black text-white px-4 py-2 rounded">GitHub</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact" class="max-w-7xl mx-auto rounded-2xl mt-16 mb-10 bg-gradient-to-r from-pink-400 to-purple-500 text-white py-12 px-6 md:px-10">
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div>
+<h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+
+<p class="mb-2">
+I’m Nafisa Nowshin Tisha, a frontend & web developer.
+Reach out for projects or collaborations 🚀
+</p>
+
+<p class="mb-2">
+📧 Email:
+<a href="mailto:nafisatisha230@gmail.com" class="underline">
+nafisatisha230@gmail.com
+</a>
+</p>
+
+<p>
+📍 Location: Cox's Bazar, Bangladesh
+</p>
+</div>
+
+<div>
+<h3 class="text-2xl font-bold mb-4">Message Me</h3>
+
+<form class="space-y-4">
+
+<input type="text" placeholder="Your Name"
+class="w-full px-4 py-2 rounded text-gray-800"/>
+
+<input type="email" placeholder="Your Email"
+class="w-full px-4 py-2 rounded text-gray-800"/>
+
+<textarea rows="4" placeholder="Your Message"
+class="w-full px-4 py-2 rounded text-gray-800"></textarea>
+
+<button class="bg-white text-purple-600 font-bold px-6 py-2 rounded">
+Send Message
+</button>
+
+</form>
+</div>
+
+</div>
+
+<div class="text-center pt-6 border-t border-white/20 mt-8">
+<p class="text-sm">© 2026 Nafisa Nowshin Tisha. All rights reserved.</p>
+</div>
+
+</footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+
+const skills={
+htmlSkill:{count:9,color:"#f97316"},
+cssSkill:{count:8,color:"#38bdf8"},
+tailwindSkill:{count:8,color:"#22d3ee"},
+jsSkill:{count:7,color:"#facc15"}
+}
+
+Object.entries(skills).forEach(([id,skill])=>{
+const container=document.getElementById(id)
+
+for(let i=1;i<=10;i++){
+const dot=document.createElement("span")
+dot.className="dot"
+
+if(i<=skill.count){
+dot.style.background=skill.color
+dot.classList.add("active")
+}
+
+container.appendChild(dot)
+}
+
+})
+
+})
+
+
+const toggleBtn=document.getElementById("themeToggle")
+const html=document.documentElement
+
+toggleBtn.addEventListener("click",()=>{
+html.classList.toggle("dark")
+
+if(html.classList.contains("dark")){
+toggleBtn.innerHTML='<i class="fa-solid fa-sun"></i>'
+}else{
+toggleBtn.innerHTML='<i class="fa-solid fa-moon"></i>'
+}
+
+})
 </script>
 
 </body>
