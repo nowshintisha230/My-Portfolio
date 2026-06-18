@@ -1,162 +1,239 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nafisha Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nafisha Nowshin Tisha | Portfolio</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Tailwind Dark Mode Enable -->
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
-  </script>
+<style>
+html { scroll-behavior: smooth; }
+
+/* Fix: sticky navbar height compensate */
+section {
+  scroll-margin-top: 70px;
+}
+</style>
 </head>
 
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition">
 
-<!-- NAVBAR -->
-<header class="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow z-50">
-  <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
-
-    <h1 class="font-bold text-xl">Tisha</h1>
+<!-- NAV -->
+<header class="sticky top-0 bg-white dark:bg-gray-900 shadow z-50">
+  <nav class="max-w-5xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-xl text-gray-800 dark:text-white">
+      Tisha
+    </h1>
 
     <!-- Desktop Menu -->
-    <div class="hidden md:flex gap-6 text-sm">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <div class="hidden md:flex gap-6 text-sm text-gray-700 dark:text-gray-300">
+      <a href="#home" class="hover:text-black dark:hover:text-white">Home</a>
+      <a href="#about" class="hover:text-black dark:hover:text-white">About</a>
+      <a href="#skills" class="hover:text-black dark:hover:text-white">Skills</a>
+      <a href="#projects" class="hover:text-black dark:hover:text-white">Projects</a>
+      <a href="#contact" class="hover:text-black dark:hover:text-white">Contact</a>
     </div>
 
-    <!-- Buttons -->
-    <div class="flex items-center gap-3">
-
-      <!-- Dark Mode Toggle -->
-      <button onclick="toggleDark()" class="text-xl">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-
-      <!-- Mobile Menu Button -->
-      <button class="md:hidden text-xl" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-    </div>
-
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menuBtn" class="md:hidden text-gray-700 dark:text-gray-300 text-2xl focus:outline-none" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars" id="menuIcon"></i>
+    </button>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden flex flex-col gap-3 px-4 pb-4">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#skills" onclick="closeMenu()">Skills</a>
-    <a href="#projects" onclick="closeMenu()">Projects</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+    <div class="flex flex-col px-6 py-3 gap-4 text-sm text-gray-700 dark:text-gray-300">
+      <a href="#home" class="py-1 hover:text-black dark:hover:text-white mobile-link">Home</a>
+      <a href="#about" class="py-1 hover:text-black dark:hover:text-white mobile-link">About</a>
+      <a href="#skills" class="py-1 hover:text-black dark:hover:text-white mobile-link">Skills</a>
+      <a href="#projects" class="py-1 hover:text-black dark:hover:text-white mobile-link">Projects</a>
+      <a href="#contact" class="py-1 hover:text-black dark:hover:text-white mobile-link">Contact</a>
+    </div>
   </div>
 </header>
 
 <!-- HERO -->
-<section id="home" class="pt-28 text-center px-4">
-  <h1 class="text-4xl font-bold">Nafisha Nowshin Tisha</h1>
-  <p class="mt-2 text-gray-600 dark:text-gray-300">Full Stack Developer</p>
+<section id="home" class="text-center py-20 px-4">
 
-  <div class="mt-6 flex justify-center gap-4">
-    <a href="resume.pdf" download class="bg-black text-white px-5 py-2 rounded">
+  <img src="my-photo.png"
+       alt="Nafisha Nowshin Tisha"
+       class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-gray-700 shadow-lg">
+
+  <h1 class="text-4xl font-bold mt-5">
+    Nafisha Nowshin Tisha
+  </h1>
+
+  <h2 class="text-xl text-gray-600 dark:text-gray-300 mt-2">
+    Full Stack Developer
+  </h2>
+
+  <p class="max-w-xl mx-auto mt-4 text-gray-600 dark:text-gray-300">
+    Passionate full-stack developer focused on building modern, scalable and responsive web applications using MERN stack.
+  </p>
+
+  <div class="mt-6 flex justify-center gap-4 flex-wrap">
+
+    <a href="Resume of Nafisa Nowshint Tisha(Full Stack).pdf" download
+       class="bg-gray-800 hover:bg-black text-white px-5 py-2 rounded inline-flex items-center gap-2">
+      <i class="fa-solid fa-download"></i>
       Download Resume
     </a>
 
-    <a href="#contact" class="border px-5 py-2 rounded">
+    <a href="#contact"
+       class="border border-gray-400 px-5 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
       Contact Me
     </a>
+
   </div>
+
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="scroll-mt-24 max-w-4xl mx-auto py-16 px-4">
-  <h2 class="text-2xl font-bold mb-3">About</h2>
+<section id="about" class="max-w-4xl mx-auto px-4 py-10">
+  <h2 class="text-2xl font-bold mb-3">About Me</h2>
+
   <p class="text-gray-600 dark:text-gray-300">
-    I am a Full Stack Developer skilled in MERN stack and Next.js.
+    I am a Computer Science & Engineering student at BGC Trust University, Bangladesh.
+    I specialize in Full stack development and enjoy building real-world applications with authentication,
+    REST APIs, and responsive UI design.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="scroll-mt-24 max-w-4xl mx-auto py-16 px-4">
+<section id="skills" class="max-w-4xl mx-auto px-4 py-10">
   <h2 class="text-2xl font-bold mb-5">Skills</h2>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-sm">
     <div class="border p-2 rounded">HTML</div>
     <div class="border p-2 rounded">CSS</div>
-    <div class="border p-2 rounded">Tailwind</div>
+    <div class="border p-2 rounded">Tailwind CSS</div>
     <div class="border p-2 rounded">JavaScript</div>
-    <div class="border p-2 rounded">React</div>
+    <div class="border p-2 rounded">React.js</div>
     <div class="border p-2 rounded">Next.js</div>
     <div class="border p-2 rounded">Node.js</div>
+    <div class="border p-2 rounded">Express.js</div>
     <div class="border p-2 rounded">MongoDB</div>
+    <div class="border p-2 rounded">JWT Auth</div>
+    <div class="border p-2 rounded">REST API</div>
+    <div class="border p-2 rounded">Git & GitHub</div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="scroll-mt-24 max-w-5xl mx-auto py-16 px-4">
-
+<section id="projects" class="max-w-5xl mx-auto px-4 py-10">
   <h2 class="text-2xl font-bold mb-5">Projects</h2>
 
-  <div class="grid md:grid-cols-3 gap-5">
+  <div class="space-y-4">
 
     <div class="border p-4 rounded">
-      <h3 class="font-semibold">TutorHub</h3>
-      <p class="text-sm text-gray-600 dark:text-gray-300">MERN project</p>
+      <h3 class="font-semibold">TutorHub (Full Stack MERN)</h3>
+      <p class="text-sm mt-1 text-gray-600 dark:text-gray-300">
+        Online tutoring platform for booking sessions and managing tutors.
+      </p>
+
+      <div class="flex gap-3 mt-3">
+        <a href="https://github.com/nowshintisha230/tutorhub"
+           target="_blank"
+           class="bg-gray-800 text-white px-4 py-1 rounded text-sm">
+          GitHub
+        </a>
+        <a href="https://mediqueue-fawn.vercel.app"
+           target="_blank"
+           class="bg-blue-600 text-white px-4 py-1 rounded text-sm">
+          Live
+        </a>
+      </div>
     </div>
 
     <div class="border p-4 rounded">
       <h3 class="font-semibold">SummerVibe</h3>
-      <p class="text-sm text-gray-600 dark:text-gray-300">Frontend UI</p>
+      <p class="text-sm mt-1 text-gray-600 dark:text-gray-300">
+        Summer product showcase web app with modern UI.
+      </p>
+
+      <div class="flex gap-3 mt-3">
+        <a href="https://github.com/nowshintisha230/summer-vibe"
+           target="_blank"
+           class="bg-gray-800 text-white px-4 py-1 rounded text-sm">
+          GitHub
+        </a>
+        <a href="https://summer-vibe.vercel.app"
+           target="_blank"
+           class="bg-blue-600 text-white px-4 py-1 rounded text-sm">
+          Live
+        </a>
+      </div>
     </div>
 
     <div class="border p-4 rounded">
       <h3 class="font-semibold">KeenKeeper</h3>
-      <p class="text-sm text-gray-600 dark:text-gray-300">Next.js app</p>
+      <p class="text-sm mt-1 text-gray-600 dark:text-gray-300">
+        Friendship tracking app built with Next.js.
+      </p>
+
+      <div class="flex gap-3 mt-3">
+        <a href="https://github.com/nowshintisha230/Keen-Keeper"
+           target="_blank"
+           class="bg-gray-800 text-white px-4 py-1 rounded text-sm">
+          GitHub
+        </a>
+        <a href="https://keen-keeper-puce.vercel.app/"
+           target="_blank"
+           class="bg-blue-600 text-white px-4 py-1 rounded text-sm">
+          Live
+        </a>
+      </div>
     </div>
 
   </div>
-
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="scroll-mt-24 text-center py-16">
+<section id="contact" class="text-center py-10">
   <h2 class="text-2xl font-bold">Contact</h2>
 
   <div class="flex justify-center gap-6 mt-5 text-2xl">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-envelope"></i></a>
+
+    <a href="https://github.com/nowshintisha230" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/nafishanowshintisha" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:nafisatisha230@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="text-center py-6 text-sm text-gray-500">
-  © 2026 Tisha
+  © 2026 Nafisha Nowshin Tisha | Full Stack Developer
 </footer>
 
-<!-- JS -->
 <script>
-  // mobile menu
-  function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("hidden");
-  }
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuIcon = document.getElementById('menuIcon');
 
-  function closeMenu() {
-    document.getElementById("mobileMenu").classList.add("hidden");
-  }
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    menuIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  });
 
-  // dark mode
-  function toggleDark() {
-    document.documentElement.classList.toggle("dark");
-  }
+  // Close menu when a link is clicked
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuIcon.className = 'fa-solid fa-bars';
+    });
+  });
 </script>
 
 </body>
